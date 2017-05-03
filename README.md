@@ -22,7 +22,7 @@ npm i gulp-htmlmin --save-dev<br />
 
 # Configurando o gulp
 Abra o arquivo gulpfile.js e adicione as linhas:<br />
-sudo vim gulpefile.js<br />
+sudo vim gulpfile.js<br />
 
 'use strict';
  

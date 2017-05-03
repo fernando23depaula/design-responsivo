@@ -32,26 +32,26 @@ var htmlmin = require('gulp-htmlmin');
 
 gulp.task('default',['sass','minify-html','watch']);
  
-gulp.task('sass', function () {
-  return gulp.src('./src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./www/css'));
-});
+gulp.task('sass', function () {<br />
+  return gulp.src('./src/sass/**/*.scss')<br />
+    .pipe(sass().on('error', sass.logError))<br />
+    .pipe(gulp.dest('./www/css'));<br />
+});<br />
 
-gulp.task('minify-html', function() {
-  return gulp.src('src/templates/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('www'));
-});
+gulp.task('minify-html', function() {<br />
+  return gulp.src('src/templates/*.html')<br />
+    .pipe(htmlmin({collapseWhitespace: true}))<br />
+    .pipe(gulp.dest('www'));<br />
+});<br />
  
-gulp.task('watch', function () {
-  gulp.watch('./src/sass/**/*.scss', ['sass']);
-  gulp.watch('./src/templates/*.html', ['minify-html']);
-});
+gulp.task('watch', function () {<br />
+  gulp.watch('./src/sass/**/*.scss', ['sass']);<br />
+  gulp.watch('./src/templates/*.html', ['minify-html']);<br />
+});<br />
 
 # Inicie o gulp
 cd /var/www/html/design-responsivo<br />
-#Digite<br />
+Digite<br />
 gulp<br />
 
 Acesse http://localhost/design-responsivo/www

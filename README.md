@@ -21,8 +21,8 @@ npm install gulp-sass --save-dev<br />
 npm i gulp-htmlmin --save-dev<br />
 
 # Configurando o gulp
-Abra o arquivo gulpfile.js e adicione as linhas:
-sudo vim gulpefile.js
+Abra o arquivo gulpfile.js e adicione as linhas:<br />
+sudo vim gulpefile.js<br />
 
 'use strict';
  
@@ -48,5 +48,10 @@ gulp.task('watch', function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
   gulp.watch('./src/templates/*.html', ['minify-html']);
 });
+
+# Inicie o gulp
+cd /var/www/html/design-responsivo<br />
+#Digite<br />
+gulp<br />
 
 Acesse http://localhost/design-responsivo/www

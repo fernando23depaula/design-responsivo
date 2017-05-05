@@ -1,0 +1,21 @@
+$bg-principal : #2f1656;
+$color-branco : #fff;
+$color-default: #ccc;
+*{
+	padding:0;
+	margin:0;
+	font-size:16px;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin-bottom:0;
+	color:$color-default;
+}
+main{
+	button{}
+	a{
+		text-decoration:none;
+		&:hover,&:active,&:focus{
+			text-decoration:none;
+		}
+	}
+}

@@ -1,0 +1,118 @@
+$bg-principal : #2f1656;
+$color-branco : #fff;
+$color-default: #ccc;
+h2{
+	margin-bottom:30px; 
+	margin-top:30px;
+}
+main{
+	header{
+		.navbar-default{
+			background-color:$bg-principal;
+			border-radius:0;
+			margin-bottom:0;
+			.collapse{
+				ul{
+					li{
+						a{
+							color:$color-branco;						
+						}
+					}
+				}
+			}
+		}
+	}
+	#slider{
+		#slider-inicial{
+			.carousel-inner{
+				.item{
+					img{
+						max-height:424px;
+					}
+				}
+			}
+		}
+	}
+	section#que-fazemos{
+		article{
+			div{
+				min-height:160px;
+				i{
+					font-size:3.2em;
+					padding:10px 0;
+				}
+			}
+		}
+	}
+	section#portfolio{
+		.portfolioFilter {
+			margin:20px 0;
+			a { 
+			    margin-right: 10px; 
+			    color:#666;
+			    text-decoration:none;
+			    padding:10px 0 10px 10px;
+			    .current { 
+				    font-weight:bold;
+				}
+			}
+			span{
+			    width: 1px;
+			    height: 10px;
+			    top: 5%;
+			    margin: 0 5px;
+			    display: inline-block;
+			    background: #ccc;
+			}
+		}
+		img {
+		    margin:5px;
+		}
+		 
+		.isotope-item {
+		    z-index: 2;
+		}
+		.isotope-hidden.isotope-item {
+		    pointer-events: none;
+		    z-index: 1;
+		}
+		.isotope,
+		.isotope .isotope-item {
+		  /* change duration value to whatever you like */		 
+		    -webkit-transition-duration: 0.8s;
+		    -moz-transition-duration: 0.8s;
+		    transition-duration: 0.8s;
+		}
+		.isotope {
+		    -webkit-transition-property: height, width;
+		    -moz-transition-property: height, width;
+		    transition-property: height, width;
+		}
+		.isotope .isotope-item {
+		    -webkit-transition-property: -webkit-transform, opacity;
+		    -moz-transition-property: -moz-transform, opacity;
+		    transition-property: transform, opacity;
+		}
+		article{
+			.portfolioContainer{
+				div{
+					figure{
+						figcaption{
+
+						}
+					}
+				}
+			}
+		}
+	}
+	section#nosso-time{
+		article{
+			div{
+				img{
+					max-width:180px;
+					border-radius:50%;
+				}
+			}
+		}
+	}
+}
